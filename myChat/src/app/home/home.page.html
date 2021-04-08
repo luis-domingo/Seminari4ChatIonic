@@ -34,13 +34,13 @@
 <ion-footer>
   <ion-toolbar color="light">
     <ion-row align-items-center>
-      <ion-col size="10">
+      <ion-col size="9">
         <ion-textarea auto-grow class="message-input" rows="1" [(ngModel)]="message"></ion-textarea>
       </ion-col>
-      <ion-col size="2">
+      <ion-col size="3">
         <ion-button expand="block" fill="clear" color="medium" [disabled]="message === ''" class="msg-btn"
           (click)="sendMessage()">
-          <ion-icon name="ios-send" slot="icon-only"></ion-icon>Send Message
+          <ion-icon name="ios-send" slot="icon-only"></ion-icon>Send
         </ion-button>
       </ion-col>
     </ion-row>

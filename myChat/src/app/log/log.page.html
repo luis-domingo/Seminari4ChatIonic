@@ -3,17 +3,19 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Put your name to join the chat</ion-title>
+    <ion-title>Chat App</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-toolbar color="light">
     <ion-row align-items-center>
-      <ion-col size="10">
+      <ion-col align-items-center>
         <ion-textarea auto-grow class="message-input" rows="1" [(ngModel)]="message"></ion-textarea>
       </ion-col>
-      <ion-col size="2">
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col align-items-center> 
         <ion-button expand="block" fill="clear" [disabled]="message === ''" color ="success" [routerLink]="['/home', message]" class="msg-btn">
           <ion-icon name="ios-send" slot="icon-only"></ion-icon>Join the chat
         </ion-button>
